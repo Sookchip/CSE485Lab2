@@ -1,6 +1,3 @@
-<?php 
-    require_once APP_ROOT.'/tlunews/controllers/NewsController.php';
-?>
 
 <h1>Danh sách Tin Tức</h1>
 <table>
@@ -36,4 +33,3 @@
 
 <a href="/news/add">Thêm tin tức</a>
 
-<?php require_once APP_ROOT.'/tlunews/views/layouts/footer.php'; ?>

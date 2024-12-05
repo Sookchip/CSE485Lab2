@@ -1,11 +1,14 @@
 <?php 
 
 require_once("../tlunews/config/config.php");
-require_once APP_ROOT. '/tlunews/services/NewsService.php';
+require_once APP_ROOT. '/tlunews/controllers/NewsController.php';
 
-$service = new NewsService();
-$news = $service->getAllNews();
-echo "<pre>";
-    print_r( $news );
-echo "<pre>";
+$newsController = new NewsController();
+$newsController->index();
+
+// $newsService = new NewsService();
+// $news = $newsService->getAllNews();
+// echo "<pre>";
+//     print_r( $news );
+// echo "<pre>";
 ?>
